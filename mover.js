@@ -11,7 +11,6 @@ function mover(x,y,mass,staticcondition,startxvel,startyvel,friction){
   this.actualfriction=1-this.frictionlevel;
   // this.r=map(this.mass,0,3,0,5);
   this.r=20;
-  this.color={r:random(map(this.mass,0,10,200,100),255),g:random(map(this.mass,0,10,200,100),255),b:random(map(this.mass,0,10,200,100),255)};
   this.update=function(){
     this.x+=this.xvel;
     this.y+=this.yvel;
@@ -36,7 +35,7 @@ function mover(x,y,mass,staticcondition,startxvel,startyvel,friction){
   }
   this.show=function(){
     noFill();
-    stroke(this.color.r,this.color.g,this.color.b);
+    stroke(150);
     ellipse(this.x,this.y,this.r,this.r);
   }
 }
